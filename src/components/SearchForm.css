@@ -1,0 +1,31 @@
+.search-form {
+    background-color: #eaf2f8; /* Soft blue background color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .rounded-input {
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+  }
+  
+  .rounded-button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #3498db; /* Blue button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .article-search-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+  }
