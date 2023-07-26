@@ -10,4 +10,4 @@ You also need to run the [news bias backend server](https://github.com/Astronaut
 Getting input from user and sending it to the app backend. 
 
 # To do next.
-Right now the app expects a payload with an `embeddings` field, which it will do the t-SNE visualization with. The backend is returning a jsonified SubjectMatterResponse object - add the embeddings as a separate field to this
+Backend is returning the properly formatted response, but there's some JSON error when the frontend tries to parse the embeddings. Figure that out. 

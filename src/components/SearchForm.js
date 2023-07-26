@@ -34,7 +34,8 @@ const SearchForm = () => {
       .then((response) => response.json())
       .then((data) => {
         // Handle the response from the API
-        setEmbeddings(data.embeddings);
+        const embeddings = data.articles.map((articles) => articles.embedding);
+        setEmbeddings(embeddings);
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -96,6 +97,7 @@ const SearchForm = () => {
                 value={searchDate}
                 onChange={(e) => setSearchDate(e.target.value)}
                 className="rounded-input"
+                placeholder="YYYY-MM-DD"
                 />
             </label>
             <br />
@@ -106,6 +108,7 @@ const SearchForm = () => {
                 value={startDate}
                 onChange={(e) => setStartDate(e.target.value)}
                 className="rounded-input"
+                placeholder="YYYY-MM-DD"
                 />
             </label>
             <br />
@@ -116,6 +119,7 @@ const SearchForm = () => {
                 value={endDate}
                 onChange={(e) => setEndDate(e.target.value)}
                 className="rounded-input"
+                placeholder="YYYY-MM-DD"
                 />
             </label>
             <br />
